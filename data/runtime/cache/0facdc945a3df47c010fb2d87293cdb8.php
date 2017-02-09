@@ -1,0 +1,3 @@
+<?php
+//000000000000a:17:{s:9:"site_name";s:39:"索马里海盗集团股份有限公司";s:9:"site_host";s:13:"www.baidu.com";s:8:"site_tpl";s:7:"default";s:8:"site_icp";s:0:"";s:11:"site_tongji";s:0:"";s:14:"site_copyright";s:0:"";s:12:"site_co_name";s:39:"索马里海盗集团股份有限公司";s:12:"site_address";s:36:"银河省太阳市地球村索马里";s:7:"map_lat";s:0:"";s:7:"map_lng";s:0:"";s:8:"site_tel";s:13:"+86 888 88888";s:16:"site_admin_email";s:12:"lqinb@qq.com";s:7:"site_qq";s:13:"+86 666 66666";s:14:"site_seo_title";s:51:"索马里海盗集团股份有限公司——首页";s:17:"site_seo_keywords";s:39:"索马里海盗集团股份有限公司";s:20:"site_seo_description";s:39:"索马里海盗集团股份有限公司";s:9:"site_logo";s:41:"/data/upload/2017-01-20/588193ae6791e.png";}
+?>

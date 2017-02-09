@@ -1,0 +1,46 @@
+
+    <div xmlns="" class="columnSpace" id="elem-FrontNews_list01-1450850687977" name="资讯列表">
+        <div id="FrontNews_list01-1450850687977" class="FrontNews_list01-d2_c2">
+            <ul class="comstyle newslist-01">
+                {volist name="lists['news']" id="vo"}
+                <li class="content column-num1">
+                    <!--封面图-->
+                    <div class="pic">
+                        <a href="{:url('News/index',array('id'=>$vo['n_id']))}" title="$vo['news_title']" target="_self">
+                            <img src="{$vo['news_img']|get_imgurl}" alt="{$vo.news_title}" title="{$vo.news_title}"/>
+                        </a>
+                    </div>
+
+                    <div class="main">
+                        <div class="newstitle">
+                            <ul>
+                                <li class="title">
+                                    <h3>
+                                        <a href="{:url('News/index',array('id'=>$vo['n_id']))}" title="{$vo.news_title}" target="_self"> {$vo.news_title}</a>
+                                    </h3>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="newslist">
+                            <ul>
+                                <li class="summary">
+                                    <h3>概要：</h3>
+                                    <p>
+                                        {$vo.news_scontent}
+                                        <a class="detail" href="{:url('News/index',array('id'=>$vo['n_id']))}" title="详细" target="_self">详细&gt;&gt;</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearBoth"></li>
+                {/volist}
+            </ul>
+        </div>
+    </div>
+    <div class="pagination">
+        {$page_html}
+    </div>
+
+

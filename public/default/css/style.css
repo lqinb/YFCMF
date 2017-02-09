@@ -1,0 +1,105 @@
+.pagination {
+    margin: 0;
+    text-align: right;
+
+}
+.pagination ul {
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.pagination ul>li {
+    display: inline;
+}
+.pagination ul>li>a, .pagination ul>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.428571429;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.u72{
+    /*padding-bottom: 0;*/
+    /*line-height: 122px;*/
+    width: 735px;
+    /*padding-left: 8px;*/
+    /*padding-right: 6px;*/
+    /*background: #56918d;*/
+    float: left;
+    color: #fff;
+    /*margin-left: 5px;*/
+    /*margin-right: 10px;*/
+    /*padding-top: 0;*/
+    border-bottom: #55908a 2px solid;
+    /*border-left: #55908a 2px solid;*/
+
+}
+.u72 a{
+    font-family: "微软雅黑", Arial;
+    font-size: 18px;
+    /*color: #fff;*/
+    margin-left: 5px;
+
+}
+
+.u73{
+    /*padding-bottom: 0;*/
+    /*line-height: 122px;*/
+    width: 435px;
+    /*padding-left: 8px;*/
+    /*padding-right: 6px;*/
+    /*background: #56918d;*/
+    float: left;
+    color: #fff;
+    /*margin-left: 5px;*/
+    /*margin-right: 10px;*/
+    /*padding-top: 0;*/
+    border-bottom: #55908a 2px solid;
+    /*border-left: #55908a 2px solid;*/
+
+}
+.u73 a{
+    font-family: "微软雅黑", Arial;
+    font-size: 18px;
+    /*color: #fff;*/
+    margin-left: 5px;
+
+}
+.u74{
+    /*padding-bottom: 0;*/
+    /*line-height: 122px;*/
+    width: 1200px;
+    /*padding-left: 8px;*/
+    /*padding-right: 6px;*/
+    /*background: #56918d;*/
+    float: left;
+    color: #fff;
+    /*margin-left: 5px;*/
+    /*margin-right: 10px;*/
+    /*padding-top: 0;*/
+    border-bottom: #55908a 2px solid;
+    /*border-left: #55908a 2px solid;*/
+
+}
+.u74 a{
+    font-family: "微软雅黑", Arial;
+    font-size: 18px;
+    /*color: #fff;*/
+    margin-left: 5px;
+
+}
+
+/*.menu-none A:active{*/
+    /*width:245px;*/
+    /*background:#fe7e00;*/
+    /*height:36px;*/
+    /*color:#fff;*/
+    /*text-decoration:none*/
+/*}*/

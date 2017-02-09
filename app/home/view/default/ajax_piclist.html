@@ -1,0 +1,37 @@
+        <div xmlns="" class="columnSpace" id="elem-FrontProducts_list01-1450859311543" name="商品列表">
+            <div id="FrontProducts_list01-1450859311543" class="FrontProducts_list01-d3_c1_01">
+
+                <ul class="mainul productlist-02">
+                    {volist name="lists['news']" id="vo"}
+                    <li class="content column-num4">
+                        <div class="pic-module">
+                            <div class="pic">
+                                <a href="{:url('News/index',array('id'=>$vo['n_id']))}" target="_self">
+                                    <img  src="{$vo['news_img']|get_imgurl}" alt="{$vo.news_title}" title="{$vo.news_title}" onerror="this.src='/app/home/view/jxqndl/public/images/noimage.jpg'"></a>
+                            </div>
+                        </div>
+                        <div class="pro-module">
+                            <ul class="basic">
+                                <li class="code">
+                                    <h1>
+                                        <span>产品名称：</span>
+                                        <strong>
+                                            <a href="{:url('News/index',array('id'=>$vo['n_id']))}" target="_self">{$vo.news_title}</a>
+                                        </strong>
+                                    </h1>
+                                </li>
+                            </ul>
+                            <p class="buttonP"></p>
+                        </div>
+                    </li>
+                    {/volist}
+
+                    <li class="clearBoth"></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="pagination">
+            {$page_html}
+        </div>

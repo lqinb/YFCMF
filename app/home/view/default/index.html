@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <title>{$site_seo_title} {$site_name}</title>
+    <meta name="keywords" content="{$site_seo_keywords}" />
+    <meta name="description"
+          content="{$site_seo_description}">
+    <link href="__PUBLIC__/default/css/lib.min.css" rel="stylesheet" type="text/css" />
+
+    {include file="Public:head" /}
+</head>
+<body>
+<div class="pageWidth" id="box_root">
+    <!-- 头部导航开始 -->
+    {include file="Public:headnav" /}
+    <!--头部导航结束-->
+    <!--菜单nav开始-->
+    {include file="Public:nav" /}
+    <!-- 菜单nav结束 -->
+    <!--内容页面开始-->
+    <!--banner图片开始-->
+    {include file="Public:banner" /}
+    <!--banner图片开始-->
+
+    <div class="index_main" id="box_index_main">
+        <!--新闻列表开始-->
+        <div class="index_news" id="box_index_news">
+            <div class="index_news_title" id="box_index_news_title">
+                <!-- 一列栏目开始 -->
+                <!-- 一列栏目结束 -->
+                <div class="clearBoth"></div>
+                <div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1450784207899" name="说明页">
+                    <ul class="u72">
+                        <li>
+                            <a href="{:Url('Listn/index',array('id'=>5))}">新闻资讯</a>
+                            <a style="float: right;font-size: 14px" href="{:Url('Listn/index',array('id'=>5))}">更多>></a>
+                        </li>
+
+                    </ul>
+                    <!--<div id="FrontSpecifies_show01-1450784207899" class="FrontSpecifies_show01-d1_c1">-->
+                        <!--<p>-->
+                        <!--<a href="/list-22.html">-->
+                            <!--<img alt="" src="{$yf_theme_path}public/images/06de7deb-fcd1-4ecb-9d99-c2207da42b09.jpg"/></a>-->
+                    <!--</p>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="index_news_info" id="box_index_news_info">
+                <div xmlns="" class="columnSpace" id="elem-FrontNews_list01-1450785771079" name="资讯列表">
+
+                    <div id="FrontNews_list01-1450785771079" class="FrontNews_list01-d2_c1_01">
+                        <div>
+                            <ul class="comstyle newslist-01">
+                                {volist name="mainnews" id="vo"}
+                                <li class="content column-num1">
+                                    <div class="pic">
+                                        <a href="{:url('News/index',array('id'=>$vo['n_id']))}" title="{$vo.news_title}" target="_self"><img
+                                                src="{$vo.news_img}" alt="{$vo.news_title}"
+                                                title="{$vo.news_title}"/></a>
+                                    </div>
+                                    <div class="main">
+                                        <div class="newstitle">
+                                            <ul>
+                                                <li class="title">
+                                                    <h3><a href="{:url('News/index',array('id'=>$vo['n_id']))}" title="{$vo.news_title}"
+                                                           target="_self">{$vo.news_title}</a></h3>
+                                                </li>
+                                                <li class="date"><span></span>{$vo.news_time|date="Y-m-d",###}</li>
+                                            </ul>
+                                        </div>
+                                        <div class="newslist">
+                                            <ul>
+                                                <li class="summary">
+                                                    <h3>概要：</h3>
+                                                    <p>
+                                                        {$vo.news_scontent}
+                                                        <a class="detail" href="{:url('News/index',array('id'=>$vo['n_id']))}" title="详细" target="_self">详细&gt;&gt;</a>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearBoth"></li>
+                                {/volist}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--新闻列表结束-->
+        <!--公司介绍开始-->
+        <div class="index_case" id="box_index_case">
+            <div class="index_case_title" id="box_index_case_title">
+                <div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1450784211815" name="说明页">
+                    <ul class="u73">
+                        <li class="hover">
+                            <a href="{:Url('Listn/index',array('id'=>1))}">企业介绍</a>
+                            <a style="float: right;font-size: 14px" href="{:Url('Listn/index',array('id'=>1))}">更多>></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="index_case_info" id="box_index_case_info">
+                <div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1450784215925" name="说明页">
+                    <div id="FrontSpecifies_show01-1450784215925" class="FrontSpecifies_show01-d1_c1"><p>
+                        <img width="200px" alt="" src="{$intronews.menu_img}"
+                             style="float: left; margin-right: 12px;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <p>
+                            {$intronews.menu_content}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearBoth"></div>
+    </div>
+    <!--公司介绍结束-->
+    <!--公司业务内容列表开始-->
+    <div class="index_bussing_title" id="box_index_bussing_title">
+        <div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1450784077613" name="说明页">
+            <ul class="u74">
+                <li class="hover">
+                    <a href="{:Url('Listn/index',array('id'=>5))}"> 工程业绩 </a>
+                    <a style="float: right;font-size: 14px" href="{:Url('Listn/index',array('id'=>5))}">更多>></a>
+                </li>
+            </ul>
+            <!--<div id="FrontSpecifies_show01-1450784077613" class="FrontSpecifies_show01-d1_c1"><p>-->
+                <!--<a href="/list-2.html"><img alt=""-->
+                                            <!--src="{$yf_theme_path}public/images/b25b05f1-e456-49bd-9779-0fd1b3b49bb3.png"/></a>-->
+            <!--</p></div>-->
+        </div>
+    </div>
+    <div class="index_bussing" id="box_index_bussing">
+        <div xmlns="" class="columnSpace" id="elem-FrontProducts_list01-1450784676078" name="商品列表">
+            <div id="FrontProducts_list01-1450784676078" class="FrontProducts_list01-d5_c1">
+                <div class="type">
+			<span class="sort">
+				</span>
+                </div>
+                <ul class="mainul productlist-02">
+                    {volist name="casenews" id="vo"}
+                    <li class="content column-num99">
+                        <div class="pic-module">
+                            <div class="pic">
+                                <a href="{:url('News/index',array('id'=>$vo['n_id']))}" title="{$vo.news_title}" target="_self">
+                                    <img src="{$vo.news_img}" id="FrontProducts_list02-{$vo.news_time}" alt="{$vo.news_title}"
+                                         title="{$vo.news_title}"
+                                         onerror="this.src='/app/home/view/default/public/images/noimage.jpg'"/></a>
+                            </div>
+                        </div>
+                        <div class="pro-module">
+                            <ul class="basic">
+                                <li class="code">
+                                    <h1>
+                                        <span>产品名称：</span>
+                                        <strong>{$vo.news_title}</strong>
+                                    </h1>
+                                </li>
+                                <li class="detaillinks"><a href="{:url('News/index',array('id'=>$vo['n_id']))}" title="{$vo.news_title}">详细内容</a></li>
+                            </ul>
+                            <p class="buttonP"></p>
+                        </div>
+                    </li>
+                    {/volist}
+                </ul>
+
+            </div>
+            <script type="text/javascript">
+            </script>
+        </div>
+    </div>
+    <!--公司业务内容列表结束-->
+    <!-- 底部版权开始 -->
+    {include file="Public:footer" /}
+    <!-- 底部版权结束 -->
+</div>
+
+</body>
+</html>

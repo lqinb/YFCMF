@@ -1,0 +1,43 @@
+<div class="header" id="box_header">
+    <!--网站logo-->
+    <div class="logo" id="box_logo">
+        <div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1450783887970" name="说明页">
+            <div class="FrontSpecifies_show01-d1_c1">
+                <p>
+                    <a href=""><img height="200px" alt="" src="{$site_logo|get_imgurl}" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--栏目导航-->
+    <div class="nav" id="box_nav">
+        <div xmlns="" class="columnSpace" id="elem-FrontColumns_navigation01-1450783978725" name="栏目导航">
+
+            <div class="FrontColumns_navigation01-d2_c1">
+                <div class="mattblackmenu">
+                    <ul id=""  class="nav-first"></li>
+                        <li ><a
+                            {if condition="$cpage_id eq 0"}
+                                class="selected"
+                            {/if}
+                                href='{:Url('Index/index')}' class=''>首页</a>
+                        {volist name="menus" id="vo"}
+
+                            <li>
+                                <a
+                                        {if condition="$cpage_id eq $vo['id']"}
+                                        class="selected"
+                                        {/if}
+                             href='{:Url('Listn/index',array('id'=>$vo['id']))}' class=''>{$vo.menu_name}</a>
+                            </li>
+
+                        {/volist}
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearBoth"></div>
+</div>

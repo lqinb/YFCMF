@@ -1,0 +1,52 @@
+<div class="sub_left" id="box_sub_left">
+    <div class="sub_left_title" id="box_sub_left_title">
+        <div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1450850650552" name="说明页">
+            <div id="FrontSpecifies_show01-1450850650552" class="FrontSpecifies_show01-d1_c1">
+                <p>
+                    {$pagetitle}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="sub_left_type" id="box_sub_left_type">
+        <div xmlns="" class="columnSpace" id="elem-FrontNewsCategory_tree01-1450850671971" name="资讯分类">
+            <div id="FrontNewsCategory_tree01-1450850671971" class="FrontNewsCategory_tree01-d2_c1">
+                <div class="menu-first">
+                    <ul>
+                        <li class="menu-none">
+                            {volist name="submenu" id="vo"}
+                            <a
+
+                                    {if condition="$list_id eq $vo['id']"}
+                                    style="background: #fe7e00;color: #ffffff;width:205px;margin-bottom: 2px"
+                                    {/if}
+                            {if condition="$list_id neq $vo['id']"}
+                            style="margin-bottom: 2px"
+                            {/if}
+
+                               href="{:url('Listn/index',array('id'=>$vo['id'],'pid'=>$vo['parentid']))}" target="_self" class="menu-text1">{$vo.menu_name}</a>
+                            {/volist}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sub_contact_title" id="box_sub_contact_title">
+        <div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1450837792432" name="说明页">
+            <div id="FrontSpecifies_show01-1450837792432" class="FrontSpecifies_show01-d1_c1"><p>
+                联系我们</p></div>
+        </div>
+    </div>
+    <div class="sub_contact" id="box_sub_contact">
+        <div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1450837797007" name="说明页">
+            <div id="FrontSpecifies_show01-1450837797007" class="FrontSpecifies_show01-d1_c1"><p>
+                {$site_tel}</p>
+                <p>
+                    {$site_qq}</p>
+                <p>
+                    <a href="mailto:quanneng_design@126.com">{$site_admin_email}</a></p>
+                <p>{$site_address}</p></div>
+        </div>
+    </div>
+</div>

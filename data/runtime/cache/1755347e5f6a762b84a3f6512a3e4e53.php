@@ -1,0 +1,3 @@
+<?php
+//000000000000a:6:{i:0;a:5:{i:0;s:10:"about.html";i:1;s:26:"home/Listn/index/id/1.html";i:2;s:8:"post|get";i:3;a:0:{}i:4;a:0:{}}i:1;a:5:{i:0;s:8:"about_en";i:1;s:16:"Listn/index?id=8";i:2;s:8:"post|get";i:3;a:0:{}i:4;a:0:{}}i:2;a:5:{i:0;s:8:"contacts";i:1;s:16:"Listn/index?id=4";i:2;s:8:"post|get";i:3;a:0:{}i:4;a:0:{}}i:3;a:5:{i:0;s:11:"contacts_en";i:1;s:17:"Listn/index?id=11";i:2;s:8:"post|get";i:3;a:0:{}i:4;a:0:{}}i:4;a:5:{i:0;s:8:"list/:id";i:1;s:11:"Listn/index";i:2;s:8:"post|get";i:3;a:0:{}i:4;a:0:{}}i:5;a:5:{i:0;s:8:"news/:id";i:1;s:10:"News/index";i:2;s:8:"post|get";i:3;a:0:{}i:4;a:0:{}}}
+?>

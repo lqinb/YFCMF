@@ -1,0 +1,50 @@
+<div class="banner" id="box_banner">
+    <div xmlns="" class="columnSpace">
+        <script type="text/javascript" src="__PUBLIC__/default/js/superslide.2.1.js"></script>
+        <div class="FrontPublic_slideShow01-d6_c1">
+            <div class="fullSlide">
+                <div class="bd">
+
+                    <ul>
+                        {volist name="adpic" id="vo"}
+                        <li>
+                            <a href="{$vo.plug_ad_url}" class="f_pic" target="_blank">
+                                <img width="1400PX" src="{$vo.plug_ad_pic}"/>
+                            </a>
+                        </li>
+                        {/volist}
+
+                    </ul>
+                </div>
+                <div class="hd">
+                    <ul></ul>
+                </div>
+                <span class="prev"></span>
+                <span class="next"></span>
+            </div>
+            <script type="text/javascript">
+                $(".fullSlide").hover(function () {
+                            $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+                        },
+                        function () {
+                            $(this).find(".prev,.next").fadeOut()
+                        });
+                $(".fullSlide").slide({
+                    titCell: ".hd ul",
+                    mainCell: ".bd ul",
+                    effect: "fold",
+                    autoPlay: true,
+                    autoPage: true,
+                    trigger: "click",
+                    interTime: "5" * 1000,
+                    startFun: function (i) {
+                        var curLi = jQuery(".fullSlide .bd li").eq(i);
+                        if (!!curLi.attr("_src")) {
+                            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+                        }
+                    }
+                });
+            </script>
+        </div>
+    </div>
+</div>

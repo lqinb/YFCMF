@@ -1,0 +1,81 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- InstanceBegin template="/Templates/common.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+    <link href="__PUBLIC__/default/css/page_news.min.css" rel="stylesheet" type="text/css" />
+
+    <title>{$menu.menu_seo_title|default=$site_seo_title} {$site_name}</title>
+    <meta name="keywords" content="{$menu.menu_seo_key|default=$site_seo_keywords}" />
+    <meta name="description" content="{$menu.menu_seo_des|default=$site_seo_description}">
+    {include file="Public:head" /}
+</head>
+<body>
+<div class="pageWidth" id="box_root">
+    <!-- 头部导航开始 -->
+    <!-- 头部导航开始 -->
+    <!-- 头部导航开始 -->
+    {include file="Public:headnav" /}
+    <!--头部导航结束-->
+    <!--菜单nav开始-->
+    {include file="Public:nav" /}
+    <!-- 菜单nav结束 -->
+
+    <!-- 装饰图片开始 -->
+    <div class="sub_banner" id="box_sub_banner">
+        <!--InstanceBeginEditable name="box_sub_banner"-->
+        <div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1450850493014" name="说明页">
+            <div id="FrontSpecifies_show01-1450850493014" class="FrontSpecifies_show01-d1_c1"><img src="__PUBLIC__/default/images/about_banner.jpg" /></div>
+        </div>
+        <!--InstanceEndEditable-->
+    </div>
+    <!-- 装饰图片开始 -->
+    <div class="sub_main" id="box_sub_main">
+        {include file="Public:leftnav" /}
+        <div class="sub_body" id="box_sub_body">
+            <div class="sub_mbx" id="box_sub_mbx">
+                <div xmlns="" class="columnSpace" id="elem-FrontPublic_breadCrumb01-1450850463894" name="面包屑">
+                    <div id="FrontPublic_breadCrumb01-1450850463894" class="FrontPublic_breadCrumb01-d1_c1">
+                        <div>
+                            您现在的位置：
+                            <a href="{:Url('Index/index')}" target="_self">网站首页</a>>>&nbsp;
+                            {if condition="!empty($parmenu)"}
+                            <a href="{:url('Listn/index',array('id'=>$parmenu['id']))}" target="_self">{$parmenu.menu_name}</a>>>&nbsp;
+                            {/if}
+                            <a href="{:url('Listn/index',array('id'=>$menu['id']))}" target="_self">{$menu.menu_name}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub_info" id="box_sub_info">
+                {include file="Public:menucomment"/}
+            </div>
+        </div>
+        <!--InstanceEndEditable-->
+        <div class="clearBoth"></div>
+    </div>
+    <!-- 底部版权开始 -->
+    {include file="Public:footer"/}
+    <!--<div class="hide_code" id="box_hide_code">-->
+    <!--<script type="text/javascript">-->
+    <!--$(document).ready(function() {-->
+    <!--$("#box_sub_banner .FrontSpecifies_show01-d1_c1").each(function(i) {-->
+    <!--var img = $(this).find("img");-->
+    <!--var src = img.attr("src");-->
+    <!--img.css("display", "block");-->
+    <!--$(this).css("background", "url(" + src + ") no-repeat center center");-->
+    <!--})-->
+    <!--});-->
+    <!--</script>-->
+    <!--&lt;!&ndash;InstanceEndEditable&ndash;&gt;-->
+    <!--</div>-->
+    <!-- 底部版权结束 -->
+</div>
+{include file="Public:scripts"/}
+
+</body>
+
+<!-- InstanceEnd -->
+
+</html>

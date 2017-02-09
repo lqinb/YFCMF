@@ -1,0 +1,168 @@
+<div class="copyright_bg" id="box_copyright_bg">
+    <div class="copyright" id="box_copyright">
+        <div id="box_copyright_sub1">
+            <div xmlns="" class="columnSpace" id="elem-FrontColumns_navigation01-1450784227487" name="栏目导航">
+                <div id="FrontColumns_navigation01-1450784227487" class="FrontColumns_navigation01-d3_c1">
+                    <ul class="nav-first">
+                        <li id="columns34" class="first">
+                            <a href="" title="公司简介">
+                                <span>公司介绍</span>
+                            </a>
+                        </li>
+                        {volist name="intromenus" id="vo"}
+                        <li>
+                            <a href="{:url('Listn/index',array('id'=>$vo['id'],'pid'=>$vo['parentid']))}" title="{$vo.menu_name}">
+                                <span>{$vo.menu_name}</span>
+                            </a>
+                        </li>
+                        {/volist}
+                        <li class="last"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="box_copyright_sub2">
+            <div xmlns="" class="columnSpace" id="elem-FrontColumns_navigation01-1450784234053" name="栏目导航">
+                <script type="text/javascript">
+                    //<![CDATA[
+                    FrontColumns_navigation01['FrontColumns_navigation01-1450784234053_init'] = function () {
+                        FrontColumns_navigation01.extEvents("FrontColumns_navigation01-1450784234053", "");
+                    }
+                    $(FrontColumns_navigation01['FrontColumns_navigation01-1450784234053_init']);
+                    // ]]>
+                </script>
+                <div id="FrontColumns_navigation01-1450784234053" class="FrontColumns_navigation01-d3_c1">
+                    <ul class="nav-first">
+                        <li id="columns35" class="first">
+                            <a title="专业团队">
+                                <span>专业团队</span>
+                            </a>
+                        </li>
+                        {volist name="membermenus" id="vo"}
+                        <li>
+                            <a href="{:url('Listn/index',array('id'=>$vo['id'],'pid'=>$vo['parentid']))}" title="{$vo.menu_name}">
+                                <span>{$vo.menu_name}</span>
+                            </a>
+                        </li>
+                        {/volist}
+
+                        <li class="last"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="box_copyright_sub3">
+            <div xmlns="" class="columnSpace" id="elem-FrontColumns_navigation01-1450784245260" name="栏目导航">
+                <script type="text/javascript">
+                    //<![CDATA[
+                    FrontColumns_navigation01['FrontColumns_navigation01-1450784245260_init'] = function () {
+                        FrontColumns_navigation01.extEvents("FrontColumns_navigation01-1450784245260", "");
+                    }
+                    $(FrontColumns_navigation01['FrontColumns_navigation01-1450784245260_init']);
+                    // ]]>
+                </script>
+                <div id="FrontColumns_navigation01-1450784245260" class="FrontColumns_navigation01-d3_c1">
+                    <ul class="nav-first">
+                        <li id="columns36" class="first">
+                            <a title="工程业绩">
+                                <span>工程业绩</span>
+                            </a>
+                        </li>
+                        {volist name="casenews" id="vo"}
+                        <li>
+                            <a href="{:url('News/index',array('id'=>$vo['n_id']))}" title="{$vo.news_title}">
+                                <span>{$vo.news_title}</span>
+                            </a>
+                        </li>
+                        {/volist}
+
+                        <li class="last"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="box_copyright_sub4">
+            <div xmlns="" class="columnSpace" id="elem-FrontColumns_navigation01-1450784249927" name="栏目导航">
+                <script type="text/javascript">
+                    //<![CDATA[
+                    FrontColumns_navigation01['FrontColumns_navigation01-1450784249927_init'] = function () {
+                        FrontColumns_navigation01.extEvents("FrontColumns_navigation01-1450784249927", "");
+                    }
+                    $(FrontColumns_navigation01['FrontColumns_navigation01-1450784249927_init']);
+                    // ]]>
+                </script>
+                <div id="FrontColumns_navigation01-1450784249927" class="FrontColumns_navigation01-d3_c1">
+                    <ul class="nav-first">
+                        <li id="columns37" class="first">
+                            <a title="人才招聘">
+                                <span>人才招聘</span>
+                            </a>
+                        </li>
+                        {volist name="advmenus" id="vo"}
+                        <li>
+                            <a href="{:url('Listn/index',array('id'=>$vo['id'],'pid'=>$vo['parentid']))}" title="{$vo.menu_name}">
+                                <span>{$vo.menu_name}</span>
+                            </a>
+                        </li>
+                        {/volist}
+
+                        <li class="last"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="box_copyright_sub5">
+            <div xmlns="" class="columnSpace" id="elem-FrontColumns_navigation01-1450784263463" name="栏目导航">
+                <script type="text/javascript">
+                    //<![CDATA[
+                    FrontColumns_navigation01['FrontColumns_navigation01-1450784263463_init'] = function () {
+                        FrontColumns_navigation01.extEvents("FrontColumns_navigation01-1450784263463", "");
+                    }
+                    $(FrontColumns_navigation01['FrontColumns_navigation01-1450784263463_init']);
+                    // ]]>
+                </script>
+                <div id="FrontColumns_navigation01-1450784263463" class="FrontColumns_navigation01-d3_c1">
+                    <ul class="nav-first">
+                        <li id="columns38" class="first">
+                            <a>
+                                <span>联系我们</span>
+                            </a>
+                        </li>
+                        {volist name="conmenus" id="vo"}
+                        <li>
+                            <a href="{:url('Listn/index',array('id'=>$vo['id'],'pid'=>$vo['parentid']))}" title="{$vo.menu_name}">
+                                <span>{$vo.menu_name}</span>
+                            </a>
+                        </li>
+                        {/volist}
+                        <li class="last"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright_info" id="box_copyright_info">
+            <div class="columnSpace">
+                <div id="FrontSpecifies_show01-1450784268118" class="FrontSpecifies_show01-d1_c1">
+                    <p>{$site_co_name}</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>地址：{$site_address}<br/>电话： {$site_tel}<br/>传真： {$site_qq}</p>
+                </div>
+            </div>
+        </div>
+        <div class="clearBoth"></div>
+    </div>
+</div>
+<div class="hide_code" id="box_hide_code">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#box_sub_banner .FrontSpecifies_show01-d1_c1").each(function (i) {
+                var img = $(this).find("img");
+                var src = img.attr("src");
+                img.css("display", "block");
+                $(this).css("background", "url(" + src + ") no-repeat center center");
+            })
+        });
+    </script>
+    <!--InstanceEndEditable-->
+</div>
